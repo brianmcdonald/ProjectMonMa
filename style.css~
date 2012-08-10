@@ -1,0 +1,476 @@
+/*
+Theme Name: ProjectMonma
+Theme URI: http://brianmcdonald.me
+Description: A completely WordPress 3.0 compatible theme.
+Author: Brian Mc Donald
+Author URI: http://brianmcdonald.me
+Version: 0.1
+*/
+
+
+body{
+	font-family: Arial, Helvetica, Georgia, Sans-serif;
+	font-size: 12px;
+	background: #fff;
+	color: #000000;
+}
+
+a:link, a:visited{
+	text-decoration: none; 
+	/*color: #cccccc;*/
+}
+
+a:hover{
+	color: #5f5f5f;
+}
+
+h1 {
+	color:red;
+	font-size: 54px;
+	/*google font*/
+	font-family: 'Questrial', sans-serif;
+	
+}
+
+h3 {
+	font-size: 24px;
+}
+p {
+	font-family: MuseoSans-500; 
+	font-weight: normal; 
+	font-style: normal; 
+	font-size: 15px;
+}
+	
+#wrapper{
+	margin: 0 auto;
+	width: 940px;
+	text-align: left;
+	background: #FFF;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+#header{
+	width: 940px;
+	height: 100px;
+	background: #2b2b2b;
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
+	border-bottom-right-radius:15px;	
+	padding-left: 10px;
+}
+
+.nav{
+	padding-left: 15px;
+	background: #cccccc;
+	display:block;
+	float:left;
+	position:relative;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	
+	list-style-type: none;
+height: 30px;
+margin-top: 0px;
+padding-top: 10px;
+}
+
+.nav ul{
+	list-style:none;
+	padding-left: 20px;
+}
+
+.nav li{
+	float:left;
+	position:relative;
+}
+
+.nav a{
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	padding:0 15px 10px 0;
+	font-size:13px; 
+	font-weight:bold;
+}
+
+.nav ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	float:left;
+	z-index:99999;
+	background: #212121;
+}
+
+.nav ul ul ul{
+	top: 30%;
+	left:100%;
+	background: #343434;
+}
+
+.nav ul ul a{
+	height:auto;
+	line-height:1em;
+	padding:10px;
+	width:130px;
+	margin-bottom: 38px;
+}
+
+.nav li:hover > a,.nav ul ul:hover > a{
+	color:#ccc;
+}
+
+.nav ul li:hover > ul{
+	display:block;
+}
+#banner{
+	margin:0px;
+	width: 940px;
+	height: 300px;
+	background-color: #f7f5ef;
+	border-style:solid;
+	border-width: 1px;
+	border-color: #CCC;
+	border-radius: 15px;
+	position:relative;
+	top:50px;
+	margin-bottom: 50px;
+}
+div.shop 
+{ 
+	width: 400px;
+	height: 200px;
+   left: 50px; 
+   top: 50px;
+   background-color: #fff;
+   background-image:url('http://localhost/projectmonma/wp-content/themes/projectmonma/img/shop.jpg'); 
+   border-width: 1px;
+   border-color: #CCC;
+   text-align: center;  
+   border-style:solid; 
+   border-radius: 15px;
+   position:relative;
+} 
+
+div.transbox
+  {
+  position: relative;
+  width:300px;
+  height:100px;
+  background-color:#2B2B2B;
+  margin-top: 50px;
+  opacity:0.7;
+  }
+  div.transbox a
+  {
+  position: absolute;
+  width:400px;
+  height:200px;
+  }
+div.transbox p
+  {
+  position: absolute;
+  top: 15px;
+  width: 170px;
+  font-weight:bold;
+
+  color: white;
+  }
+div.transbox h3	
+ {
+ position: absolute;
+ top: 35px;
+ left: 175px;
+ width: 100px;
+ font-weight:bold;
+ color: white; 
+ }
+
+div.transbox a	
+ {
+ position: absolute;
+ height: 100px;
+ width: 300px;
+ font-weight:bold;
+ color: white;
+ }
+ 
+ div.transbox i
+ {
+ 	margin-left: 270px;
+	margin-top: 35px;
+ }
+
+div.project 
+{ 
+	width: 400px;
+	height: 200px;
+   position: absolute; 
+   right: 50px; 
+   top: 50px;
+   background-image:url('http://localhost/projectmonma/wp-content/themes/projectmonma/img/projects.jpg'); 
+   border-width: 1px;
+   border-color: #CCC;
+   text-align: center;
+   border-style:solid;
+   border-radius: 15px;
+} 
+#blog{
+	float: left;
+	width: 820px;
+	padding: 0 10px 10px 10px;
+	background-color:#F7F5EF;
+	margin-left: 50px;
+	
+}
+
+#products 
+{ 
+	width: 940px;
+	height: 400px;
+   background-color: #2B2B2B;
+   left:-10px;
+   border-radius: 15px;
+} 
+#prod1
+{
+  	position: absolute;
+	margin: 25px 0 0 25px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+   border-radius: 15px;
+}
+#prod2
+{
+  	position: absolute;
+	margin: 225px 0 0 25px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+#prod3
+{
+  	position: absolute;
+	margin: 25px 0 0 225px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+#prod4
+{
+  	position: absolute;
+	margin: 225px 0 0 225px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+#prod5
+{
+  	position: absolute;
+	margin: 25px 0 0 525px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+#prod6
+{
+  	position: absolute;
+	margin: 225px 0 0 525px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+#prod7
+{
+  	position: absolute;
+	margin: 25px 0 0 725px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+#prod8
+{
+  	position: absolute;
+	margin: 225px 0 0 725px;
+   height: 150px;
+   width: 150px;
+   background-color: white;
+   text-align: center;
+}
+
+.sidebar{
+	float: left;
+	width: 200px;
+	margin: 0 0 0 10px;
+	font-size: 14px;
+	list-style: none;
+}
+
+#footer{
+	clear: both;
+	text-align: center;
+	height: 50px;
+	background: #ccc;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.gravatar{
+	float: right;
+}
+
+.comments-template{
+	margin: 10px 0 0;
+	padding: 30px 0 0;
+}
+
+.comments-template ol{
+	margin: 0;
+	padding: 0 0 15px;
+	list-style: none;
+}
+
+.comments-template ol li{
+	margin: 10px 0 0;
+	line-height: 18px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.comments-template textarea{
+	width: 500px;
+}
+
+.wp-caption {
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; /* optional rounded corners for browsers that support it */
+  margin: 10px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.wp-caption img {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/** Carousel**/
+.carousel {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carousel .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.5s ease-in-out left;
+  -moz-transition: 0.5s ease-in-out left;
+  -ms-transition: 0.5s ease-in-out left;
+  -o-transition: 0.5s ease-in-out left;
+  transition: 0.5s ease-in-out left;
+}
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+.carousel .active, .carousel .next, .carousel .prev {
+  display: block;
+}
+.carousel .active {
+  left: 0;
+}
+.carousel .next, .carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel .next {
+  left: 100%;
+}
+.carousel .prev {
+  left: -100%;
+}
+.carousel .next.left, .carousel .prev.right {
+  left: 0;
+}
+.carousel .active.left {
+  left: -100%;
+}
+.carousel .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.carousel-control.right {
+  left: auto;
+  right: 15px;
+}
+.carousel-control:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+}
+.carousel-caption p {
+  color: #ffffff;
+  margin: 0;
+}
+.project-progress-big {
+width: 400px;
+}

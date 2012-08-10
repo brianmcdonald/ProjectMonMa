@@ -1,0 +1,77 @@
+<?php
+/*
+Template Name: shop
+*/
+?>
+
+<?php get_header(); ?>
+
+
+	<div id="blog">
+		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+		
+		<div class="post">
+		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+			<div class="entry">
+			<?php the_content(); ?>
+			</div>
+		</div>
+		
+		<div id="carousel" class="carousel">
+  			<div class="carousel-inner">
+   			<div class="item active">
+      		<img src="01.jpg" alt="Some Alt Text" />
+      				<div class="carousel-caption">
+      				Browse our Shop And see if theres anything you like
+     					</div>
+   			</div>
+
+    				<div class="item">
+      			<img src="02.jpg" alt="Some Alt Text" />
+      				<div class="carousel-caption">
+      				Some caption
+      			</div>
+    			</div>
+      		<div class="item">
+      		<img src="03.jpg" alt="Some Alt Text" />
+      			<div class="carousel-caption">
+      			Some caption
+      		</div>
+    		</div>
+      	<a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+  			<a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+    
+    		<?php $n=0; foreach($page->images() as $image): $n++; ?>
+    		<div class="item<?php if($n==1) echo ' active' ?>">
+      	<img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>" />
+      		<div class="carousel-caption">
+      		<?php echo kirbytext($image->caption()) ?>
+      		</div>
+    		</div>
+    		<?php endforeach ?>
+  		</div>
+	
+<script>
+
+
+$(function() {
+  $('#carousel').carousel();
+  interval: 2000
+});
+
+</script>
+	<?php get_footer(); ?>	
+		
+<?php endwhile; ?>
+
+	<div class="navigation">
+		<?php posts_nav_link(); ?>
+	</div>
+
+<?php endif; ?>
+
+</div>
+
+
+
