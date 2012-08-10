@@ -19,7 +19,7 @@ Template Name: superhome
 			<div class="transbox"><a href="http://projectmonma.org/category/projects/" title="Projects">
 			<h3>Projects</h3>
 			<i class="icon-leaf icon-white"></i>
-			<p>Take a look at how your purchases and donations are transforming life in each community
+			<p>Take a look at how your purchases and donations are transforming life in their communities
 			</p></a>
 			</div>
 		</div>	
