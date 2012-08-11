@@ -7,13 +7,13 @@ Template Name: superhome
 
 	<div id="banner">
 		<div class="market">
-			<div class="transbox"><a href="http://projectmonma.org/market/" title="Market"></a>
-			<i class="icon-shopping-cart icon-white"></i>
+			<div class="transbox"><a href="http://projectmonma.org/category/market/" title="Market">
 			<h3>Market</h3>
+			<i class="icon-shop icon-white"></i>
 			<p>Browse our collection of handcrafted beads and environmentally friendly sandals
-			</p>
+			</p></a>
 			</div>
-		</div>
+		</div>	
 		
 		<div class="project">
 			<div class="transbox"><a href="http://projectmonma.org/category/projects/" title="Projects">
