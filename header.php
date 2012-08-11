@@ -38,7 +38,7 @@
 </a>
 	</div>
 
-  <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'nav', 'theme_location' => 'primary-menu' )  ); ?> 
+  <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'navh', 'theme_location' => 'primary-menu' )  ); ?> 
   <div id="socialicons">
 	<a href="https://www.facebook.com/ProjectMonMa" target="_blank">
 	<img src="http://projectmonma.org/wp-content/themes/projectmonma/css/glyphicons/glyphicons_390_facebook.png" alt="facebook" />

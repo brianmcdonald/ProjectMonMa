@@ -7,13 +7,13 @@ Template Name: superhome
 
 	<div id="banner">
 		<div class="market">
-			<div class="transbox"><a href="http://projectmonma.org/category/market/" title="Market">
+			<div class="transbox"><a href="http://projectmonma.org/market/" title="Market">
 			<h3>Market</h3>
-			<i class="icon-shop icon-white"></i>
+			<i class="icon-shopping-cart icon-white"></i>
 			<p>Browse our collection of handcrafted beads and environmentally friendly sandals
 			</p></a>
 			</div>
-		</div>	
+		</div>
 		
 		<div class="project">
 			<div class="transbox"><a href="http://projectmonma.org/category/projects/" title="Projects">
@@ -28,7 +28,7 @@ Template Name: superhome
 	
 	
 	
-	<div id="blog">
+	<div id="blog" style="padding-top: 20px;">
 		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		
 		<div class="post">

@@ -62,7 +62,7 @@ p {
 	padding-left: 10px;
 }
 
-.nav{
+.navh{
 	padding-left: 15px;
 	background: #cccccc;
 	display:block;
@@ -71,32 +71,33 @@ p {
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
 	
+	
 	list-style-type: none;
-height: 30px;
-margin-top: 0px;
-padding-top: 10px;
+	height: 30px;
+	margin-top: 0px;
+	padding-top: 10px;
 }
 
-.nav ul{
+.navh ul{
 	list-style:none;
 	padding-left: 20px;
 }
 
-.nav li{
+.navh li{
 	float:left;
 	position:relative;
 }
 
-.nav a{
+.navh a{
 	display:block;
 	text-decoration:none;
-	color:#fff;
+/*	color:#fff; */
 	padding:0 15px 10px 0;
 	font-size:13px; 
 	font-weight:bold;
 }
 
-.nav ul ul{
+.navh ul ul{
 	display:none;
 	position:absolute;
 	top:100%;
@@ -106,13 +107,13 @@ padding-top: 10px;
 	background: #212121;
 }
 
-.nav ul ul ul{
+.navh ul ul ul{
 	top: 30%;
 	left:100%;
 	background: #343434;
 }
 
-.nav ul ul a{
+.navh ul ul a{
 	height:auto;
 	line-height:1em;
 	padding:10px;
@@ -120,11 +121,11 @@ padding-top: 10px;
 	margin-bottom: 38px;
 }
 
-.nav li:hover > a,.nav ul ul:hover > a{
+.navh li:hover > a,.navh ul ul:hover > a{
 	color:#ccc;
 }
 
-.nav ul li:hover > ul{
+.navh ul li:hover > ul{
 	display:block;
 }
 #banner{
