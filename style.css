@@ -70,12 +70,10 @@ p {
 	position:relative;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
-	
-	
 	list-style-type: none;
 	height: 30px;
-	margin-top: 0px;
 	padding-top: 10px;
+	margin: 0 0 0 0;
 }
 
 .navh ul{
@@ -515,3 +513,10 @@ div.transbox a
 .project-progress-big {
 width: 400px;
 }
+
+/*icons in menu*/
+.get-involved-icon a{
+padding-left: 30px;
+background-image: url(img/glyphicons_340_globe.png);
+background-position: left;
+background-repeat: no-repeat;

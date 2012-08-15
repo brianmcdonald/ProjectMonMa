@@ -33,9 +33,6 @@
 <div id="wrapper">
 	<div id="header">
 		<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<i class="icon-hand-right icon-white"></i>
-		
-</a>
 	</div>
 
   <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'navh', 'theme_location' => 'primary-menu' )  ); ?> 
