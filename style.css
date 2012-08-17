@@ -180,12 +180,14 @@ div.transbox
   margin-top: 50px;
   opacity:0.7;
   }
-  div.transbox a
+  /* 
+div.transbox a
   {
   position: absolute;
   width:400px;
   height:200px;
   }
+ */
 div.transbox p
   {
   position: absolute;

@@ -32,7 +32,7 @@
 	<div class="navigation">
 		<?php posts_nav_link(); ?>
 	</div>
-
+<hr/>
 <?php endif; ?>
 
 </div>

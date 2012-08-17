@@ -28,7 +28,7 @@ var progress = setInterval(function() {
     $bar.text($bar.width()/4 + "%");
 }, 800);
 </script>
- <b>This Project is funded50%</b>
+ <b>This Project is funded 50%</b>
 			<?php the_content(); ?>
 			
 
@@ -36,7 +36,7 @@ var progress = setInterval(function() {
 				<?php _e('Filed under&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php  the_author(); ?><br />
 				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', ' &#124; ', ''); ?>
 				</p>
-
+<hr />
 			</div>
 
 		</div>
@@ -46,7 +46,6 @@ var progress = setInterval(function() {
 	<div class="navigation">
 		<?php posts_nav_link(); ?>
 	</div>
-
 <?php endif; ?>
 
 </div>
