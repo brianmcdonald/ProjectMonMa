@@ -1,0 +1,32 @@
+.tweet,
+.query {
+	color: black; 
+	 
+	padding-top: 5px;
+}
+
+	.tweet_list {
+		list-style: none;
+	}
+	
+		.tweet_list li {
+			list-style-type: none;
+		}
+		
+			.tweet_list li a {
+				color: #0088cc;
+				font-size: 90%
+			}
+		
+		.tweet_list .tweet_even {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		
+		.tweet_list .tweet_avatar {
+			padding-right: .5em; float: left;
+		}
+		
+			.tweet_list .tweet_avatar img {
+				vertical-align: middle;
+			}
