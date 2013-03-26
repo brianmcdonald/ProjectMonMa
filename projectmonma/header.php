@@ -6,8 +6,8 @@
 <?php wp_title (); ?>
 </title>
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -->
+<!--<link rel="profile" href="http://gmpg.org/xfn/11" /> -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap.css">
@@ -84,10 +84,7 @@
 		<!--experiment-->
 		<?php
 $advert = array(); 
-  $advert[] = '<img src="http://projectmonma.org/wp-content/uploads/Monma-banner_1st-choice.jpg" alt="Logo" height="245" width="935">';
-  $advert[] = '<img src="http://projectmonma.org/wp-content/uploads/Monma-banner_2nd-choice.jpg" alt="Logo" height="245" width="935">';
-  $advert[] = '<img src="http://projectmonma.org/wp-content/uploads/Monma-banner_3rd-choice.jpg" alt="Logo" height="245" width="935">';
-
+$advert[] = '<img src="http://projectmonma.org/wp-content/uploads/banner1.jpg" alt="Logo" height="245" width="935">';
 shuffle($advert); 
 echo $advert[0];
 ?>

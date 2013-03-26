@@ -8,7 +8,7 @@ if( $coupon_num )
    $wpsc_coupons = new wpsc_coupons( $coupon_num );
 
 if(wpsc_cart_item_count() < 1) :
-   _e('Oops, there is nothing in your cart.', 'wpsc') . "<a href=" . esc_url( get_option( "product_list_url" ) ) . ">" . __('Please visit our shop', 'wpsc') . "</a>";
+   _e('Your cart is empty. Go back and buy things! :)', 'wpsc') . "<a href=" . esc_url( get_option( "product_list_url" ) ) . ">" . __('Please visit our shop', 'wpsc') . "</a>";
    return;
 endif;
 ?>

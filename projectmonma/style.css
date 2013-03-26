@@ -43,8 +43,8 @@ p {
 /*custom*/
 #search{
   position: absolute;
-  right: 30px;
-  top: 50px;
+  right: 0px;
+  top: 55px;
 }
 	
 #wrapper{
@@ -54,6 +54,10 @@ p {
 	background: #FFF;
 	padding: 0px 0px 0px 0px;
 	
+}
+.post-donate{
+  background-image: url(http://projectmonma.org/wp-content/uploads/page_image4.jpg);
+  height: 480px;
 }
 
 #header{
@@ -188,7 +192,10 @@ div.transbox
   margin-top: 50px;
   opacity:0.7;
   }
-   
+div.transbox:hover {
+  opacity: 1;
+  width: 100%;
+}
   div.transbox a	
  {
 /* position: absolute;*/
@@ -208,20 +215,25 @@ div.transbox p
   }
 div.transbox h3	
  {
- position: absolute;
- top: 35px;
- left: 175px;
- width: 100px;
- font-weight:bold;
- color: white; 
- margin-top: 50px;
+   position: absolute;
+   top: 35px;
+   left: 175px;
+   width: 100px;
+   font-weight:bold;
+   color: white; 
+   margin-top: 50px;
  }
- 
- div.transbox i
- {
- 	margin-left: 270px;
-	margin-top: 40px;
- }
+div.transbox:hover h3{
+  text-decoration: underline;
+}
+
+div.transbox i {
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 40px;
+  top: 57px;
+  right: 110px;
+}
 
 
 #blog{
@@ -361,7 +373,7 @@ width: 92px;
   text-align: center;
   background-color: #dff0d8;
   width: 250px;
-  margin: 0 auto; 
+  margin-left: 60px;
 }
 #projectbanner {
   position: relative;
@@ -395,7 +407,7 @@ width: 92px;
   width: 81px;
   position: absolute;
   top: 27px;
-  right: 140px;
+  right: 135px;
 }
 .base-donate {
   width: 100px;

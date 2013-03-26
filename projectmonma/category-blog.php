@@ -8,14 +8,14 @@
 		<div class="post">
 		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-			<br>
+			
 			<div class="entry">
 			
 			<?php the_content(); ?>
 			
 
 				<p class="postmetadata">
-				<?php _e('by'); ?> <i><?php  the_author(); ?></i> on <i><?php the_date(); ?></i><br />
+				<?php _e('by'); ?> <i><?php  the_author_posts_link(); ?></i> on <i><?php the_date(); ?></i><br />
 			<!--	<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', ' &#124; ', ''); ?> -->
 				</p>
 
@@ -27,6 +27,10 @@
 			</div>
 
 		</div>
+		<ul class="nav nav-list">
+			  <li class="divider"></li> 
+		</ul><!--Added divider-->
+
 		
 <?php endwhile; ?>
 

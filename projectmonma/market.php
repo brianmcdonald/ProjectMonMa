@@ -22,7 +22,7 @@ Template Name: market
       <!-- Example row of columns -->  
         <div class="row">  
             <div class="span10">  
-              <h2>Beautiful handicrafts from the heart of Africa</h2>  
+              <h2 style="text-align:center;">Beautiful handicrafts from the heart of Africa!</h2>  
               <p> </p>  
                 <div id="myCarousel" class="carousel slide">  
                 <!-- Carousel items -->  

@@ -53,7 +53,7 @@
 			
 
 				<p class="postmetadata">
-				<?php _e('by'); ?> <i><?php  the_author(); ?></i> on <i><?php the_date(); ?></i><br />
+				<?php _e('by'); ?> <i><?php  the_author_posts_link(); ?></i> on <i><?php the_date(); ?></i><br />
 			<!--	<?php edit_post_link('Edit', ' &#124; ', ''); ?> -->
 				</p>
 <hr />
