@@ -44,12 +44,6 @@ Author URI: http://instinct.co.nz
 	display:none;
 }
 
-/*-----DEFAULT PRODUCT DISPLAY-----*/
-#default_products_page_container {
-	width:100%;	
-	position:relative;
-	line-height:1.2em;
-}
 
 #default_products_page_container .wpsc_page_numbers_top {
 	margin-bottom:20px;	
@@ -112,10 +106,7 @@ Author URI: http://instinct.co.nz
 	display:block;
 }
 
-.default_product_display .productcol {
-	vertical-align: middle;
-	min-height: 50px;
-}
+
 
 .default_product_display h2.prodtitle, #content .default_product_display h2.prodtitle {
 	margin:0 0 5px 0;
@@ -131,10 +122,6 @@ Author URI: http://instinct.co.nz
 	display:block;
 }
 
-.default_product_display .wpsc_description, #content .default_product_display .wpsc_description {
-	font-size:13px;	
-	line-height:1.4em;
-}
 
 .default_product_display .additional_description, #content .default_product_display .additional_description {
 	font-size:13px;	
@@ -160,10 +147,7 @@ Author URI: http://instinct.co.nz
 	display:none;	
 }
 
-.default_product_display form.product_form fieldset, #content .default_product_display form.product_form fieldset {
-	border: none;
-	padding: 0px;
-}
+
 
 .default_product_display form.product_form fieldset legend, #content .default_product_display form.product_form fieldset legend {
 	font-size:18px;
@@ -233,13 +217,7 @@ Author URI: http://instinct.co.nz
 	color:#F60;
 }
 
-.default_product_display .wpsc_product_price {
-	margin-bottom:10px;
-	font-size:16px;
-	padding:5px;
-	display:inline-block;
-	*zoom:1;
-}
+
 
 .default_product_display .in_stock,
 .single_product_display .in_stock {
@@ -425,10 +403,7 @@ table.list_productdisplay p.soldout {
 }
 
 /*-----SINGLE PRODUCTS PAGE-----*/
-#single_product_page_container {
-	width:650px;	
-	position:relative;	
-}
+
 
 .single_product_display {
 	margin-bottom:20px;
@@ -454,17 +429,9 @@ table.list_productdisplay p.soldout {
 }
 
 
-.single_product_display .product_description, .single_product_display .single_additional_description {
-	font-size:14px;
-	line-height:1.2em;
-	margin:0 0 10px 0;
-	padding:0;	
-}
 
-.single_product_display form.product_form fieldset, #content .single_product_display form.product_form fieldset {
-	border: none;
-	padding: 0px;
-}
+
+
 
 .single_product_display form.product_form fieldset legend, #content .single_product_display form.product_form fieldset legend {
 	font-size: 18px;
@@ -522,11 +489,6 @@ table.list_productdisplay p.soldout {
 	max-width:200px;
 }
 
-.default_product_display .wpsc_quantity_update {
-	margin-bottom:10px;
-	padding-bottom:10px;
-	margin-left:10px;
-}
 
 .single_product_display .wpsc_quantity_update input, #content .single_product_display .wpsc_quantity_update input {
 	margin:0;
@@ -543,12 +505,7 @@ table.list_productdisplay p.soldout {
 	color:#F60;
 }
 
-.single_product_display .wpsc_product_price {
-	display: inline-block;
-	font-size: 16px;
-	margin-bottom: 10px;
-	padding: 5px;
-}
+
 
 .single_product_display .wpsc_product_price p, #content .single_product_display .wpsc_product_price p {
 	margin:0;
@@ -574,7 +531,7 @@ table.list_productdisplay p.soldout {
 	margin-right:6px;
 	border:1px solid #ccc;	
 }
-
+/*copied
 .single_product_display .FB_like iframe {
 	border:none;
 	width:300px;
@@ -582,6 +539,7 @@ table.list_productdisplay p.soldout {
 	outline:none;
 	overflow:hidden;
 }
+*/
 /* ---- PRODUCT RATING STYLING  ---- */
 
 .wpsc_product_rating .star {
@@ -656,7 +614,8 @@ span.rating_saved{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #ffffff;
+/*	background: #ffffff; */
+	background: #dff0d8;
 	border: 4px solid #cccccc;
 	display: none;
 	height: auto;

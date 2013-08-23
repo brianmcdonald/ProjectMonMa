@@ -7,40 +7,44 @@ Author URI: http://brianmcdonald.me
 Version: 0.1
 */
 
-
 body{
-	font-family: Arial, Helvetica, Georgia, Sans-serif;
-	font-size: 12px;
-	background: #fff;
-	color: #000000;
+  font-family: 'Open Sans', sans-serif;
+	background-color: #EAEAEA;
+  padding-top: 20px;
 }
 
 a:link, a:visited{
 	text-decoration: none; 
-	/*color: #cccccc;*/
-}
-
-a:hover{
-	color: #5f5f5f;
 }
 
 h1 {
 	color:red;
-	font-size: 54px;
-	/*google font*/
-	font-family: 'Questrial', sans-serif;
-	
+	font-size: 54px;	
 }
-
 
 h3 {
 	font-size: 24px;
 }
+h3.title {
+    text-align: center;
+}
 p {
-	font-family: MuseoSans-500; 
 	font-weight: normal; 
 	font-style: normal; 
-	font-size: 15px;
+	font-size: 14px;
+}
+
+/*custom*/
+.teambox{
+  width: 720px; 
+  margin: 0 auto;
+  text-align: center;
+}
+/*custom*/
+#search{
+  position: absolute;
+  right: 0px;
+  top: 55px;
 }
 	
 #wrapper{
@@ -51,20 +55,27 @@ p {
 	padding: 0px 0px 0px 0px;
 	
 }
+.post-donate{
+  background-image: url(http://projectmonma.org/wp-content/uploads/page_image4.jpg);
+  height: 480px;
+}
 
 #header{
-	width: 940px;
-	height: 100px;
-	background: #2b2b2b;
+  position:relative;
+  padding-top: 20px;
+	width: 935px;
+	height: 245px;
+
 	border-top-right-radius:15px;
 	border-top-left-radius:15px;
 	border-bottom-right-radius:15px;	
-	padding-left: 10px;
 }
+
+/*experiment with title*/
 
 .navh{
 	padding-left: 15px;
-	background: #cccccc;
+	background: #dff0d8;
 	display:block;
 	float:left;
 	position:relative;
@@ -89,7 +100,6 @@ p {
 .navh a{
 	display:block;
 	text-decoration:none;
-/*	color:#fff; */
 	padding:0 15px 10px 0;
 	font-size:13px; 
 	font-weight:bold;
@@ -120,7 +130,7 @@ p {
 }
 
 .navh li:hover > a,.navh ul ul:hover > a{
-	color:#ccc;
+	color: black;
 }
 
 .navh ul li:hover > ul{
@@ -136,17 +146,19 @@ p {
 	border-color: #CCC;
 	border-radius: 15px;
 	position:relative;
-	top:50px;
-	margin-bottom: 50px;
+	margin-top:20px;
+	margin-bottom: 10px;
 }
-
+.twitter{
+  width: 490px;
+}
 div.market 
 { 
 	width: 400px;
 	height: 200px;
    left: 50px; 
    top: 50px;
-   background-image:url('img/shop.jpg'); 
+   background-image:url('http://projectmonma.org/wp-content/uploads/market.png'); 
    border-width: 1px;
    border-color: #CCC;
    text-align: center;  
@@ -155,7 +167,6 @@ div.market
    position: absolute;
 } 
 
-
 div.project 
 { 
 	width: 400px;
@@ -163,7 +174,7 @@ div.project
    position: absolute; 
    right: 50px; 
    top: 50px;
-   background-image:url('img/projects.jpg'); 
+   background-image:url('http://projectmonma.org/wp-content/uploads/projects3.jpg'); 
    border-width: 1px;
    border-color: #CCC;
    text-align: center;
@@ -173,65 +184,80 @@ div.project
 
 div.transbox
   {
-  position: relative;
+ /* position: relative; */
   width:300px;
   height:100px;
   background-color:#2B2B2B;
   margin-top: 50px;
   opacity:0.7;
   }
-  /* 
-div.transbox a
-  {
-  position: absolute;
-  width:400px;
-  height:200px;
-  }
- */
-div.transbox p
-  {
-  position: absolute;
-  top: 15px;
-  width: 170px;
-  font-weight:bold;
-
-  color: white;
-  }
-div.transbox h3	
+div.transbox:hover {
+  opacity: 1;
+  width: 100%;
+}
+  div.transbox a	
  {
- position: absolute;
- top: 35px;
- left: 175px;
- width: 100px;
- font-weight:bold;
- color: white; 
- }
-
-div.transbox a	
- {
- position: absolute;
- height: 100px;
- width: 300px;
+ width:400px;
+ height:200px;
  font-weight:bold;
  color: white;
  }
  
- div.transbox i
+div.transbox p
+  {
+  position: absolute; 
+  top: 20px;
+  width: 170px;
+  margin-top: 50px;
+  color: white;
+  }
+div.transbox h3	
  {
- 	margin-left: 270px;
-	margin-top: 35px;
+   position: absolute;
+   top: 35px;
+   left: 175px;
+   width: 100px;
+   font-weight:bold;
+   color: white; 
+   margin-top: 50px;
  }
+div.transbox:hover h3{
+  text-decoration: underline;
+}
+
+div.transbox i {
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 40px;
+  top: 57px;
+  right: 110px;
+}
 
 
 #blog{
-	width: 820px;
+	width: 720px;
 	padding: 0 10px 10px 10px;
-	background-color:#eaeaea;
+	background-color:white;
 	margin-left: auto;
 	margin-right: auto;	
-	padding-top: 60px;
+	padding-top: 30px;
 }
-
+#blog-market{
+  width: 820px;
+  padding: 0 10px 10px 10px;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-top: 30px;
+}
+#blog-home{
+	background-image:url('http://projectmonma.org/wp-content/uploads/bk1.jpg');
+	width: 840px;
+	height: 560px;
+	background-color:white;
+	margin-left: auto;
+	margin-right: auto;	
+}	
 #products 
 { 
 	width: 940px;
@@ -240,79 +266,6 @@ div.transbox a
    left:-10px;
    border-radius: 15px;
 } 
-#prod1
-{
-  	position: absolute;
-	margin: 25px 0 0 25px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-   border-radius: 15px;
-}
-#prod2
-{
-  	position: absolute;
-	margin: 225px 0 0 25px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
-#prod3
-{
-  	position: absolute;
-	margin: 25px 0 0 225px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
-#prod4
-{
-  	position: absolute;
-	margin: 225px 0 0 225px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
-#prod5
-{
-  	position: absolute;
-	margin: 25px 0 0 525px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
-#prod6
-{
-  	position: absolute;
-	margin: 225px 0 0 525px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
-#prod7
-{
-  	position: absolute;
-	margin: 25px 0 0 725px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
-#prod8
-{
-  	position: absolute;
-	margin: 225px 0 0 725px;
-   height: 150px;
-   width: 150px;
-   background-color: white;
-   text-align: center;
-}
 
 .sidebar{
 	float: left;
@@ -326,10 +279,11 @@ div.transbox a
 	clear: both;
 	text-align: center;
 	height: 50px;
-	background: #ccc;
+	/*background: #dff0d8;*/
+  background: rgba(190, 190, 190, .2);
 	padding: 10px;
-	border-radius: 15px;
-	width: 940px;
+/*	border-radius: 15px;*/
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -340,7 +294,7 @@ div.transbox a
 
 .comments-template{
 	margin: 10px 0 0;
-	padding: 30px 0 0;
+	padding: 0 0 0;
 }
 
 .comments-template ol{
@@ -384,6 +338,61 @@ div.transbox a
   margin: 0;
   padding: 0 4px 5px;
 }
+/*donate icon in header*/
+#donateheader{
+position: absolute;
+right: 0;
+padding-top: 15px;
+padding-right: 5px;
+width: 92px;
+}
+.paypal-container {
+  width: 468px;
+  position: relative;
+}
+.paypal-buynow {
+  width: 224px;
+  height: 225px;
+  top: 0px;
+  left: 0px;
+  background-color: #dff0d8;
+}
+.paypal-buynow2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 224px;
+  height: 225px;
+  background-color: #dff0d8;
+}
+.paypal-donate {
+  text-align: center;
+  background-color: #dff0d8;
+  width: 250px;
+  margin-left: 60px;
+}
+.paypal-donate-center {
+  text-align: center;
+  background-color: #dff0d8;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#projectbanner {
+  position: relative;
+  width: 520px;
+
+  background-color: #dff0d8;
+  height: 60px;
+  padding-left: 20px;
+  padding-top: 5px;
+
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
 /*icons at top of page*/
 #socialicons{
 	display: block;
@@ -392,7 +401,23 @@ div.transbox a
 	float: right;
 	
 }
-
+.base {
+  position: relative;
+  width: 400px;
+  height: 80px;
+}
+.base-twitter {
+  width: 81px;
+  position: absolute;
+  top: 27px;
+  right: 135px;
+}
+.base-donate {
+  width: 100px;
+  position: absolute;
+  top: 27px;
+  right: 0px;
+}
 /** Carousel**/
 
 .carousel .item {
@@ -418,11 +443,17 @@ div.transbox a
 
 
 
-
+.carousel2 {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1;
+  width: 720px;
+}
 .carousel {
   position: relative;
   margin-bottom: 18px;
   line-height: 1;
+  width: 820px;
 }
 .carousel-inner {
   overflow: hidden;
@@ -516,9 +547,226 @@ div.transbox a
 width: 400px;
 }
 
-/*icons in menu*/
-.get-involved-icon a{
-padding-left: 30px;
-background-image: url(img/glyphicons_340_globe.png);
-background-position: left;
-background-repeat: no-repeat;
+/**************************wpsc changes*********************/
+
+
+.wpsc_page_numbers_bottom {
+  width: 60%;
+  margin: 0px auto;
+  padding-bottom: 20px;
+  padding-left: 180px;
+}
+.wpsc-breadcrumbs {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.prod_var_con {
+  float: left;
+  width: 250px;
+  height: 143px; 
+  padding-right:10px;
+} 
+.single_product_display .product_description, .single_product_display .single_additional_description {
+  font-size:14px;
+  line-height:1.2em;
+  margin:0 0 10px 0;
+  padding-top: 5px; 
+  height: 140px;
+}
+.default_product_display .wpsc_description, #content .default_product_display .wpsc_description {
+  font-size:13px; 
+  line-height:1.4em;
+  height: 140px;
+  padding-left:5px; 
+  padding-top: 5px; 
+  }
+.single_product_display form.product_form fieldset, #content .single_product_display form.product_form fieldset {
+  border: none;
+  /*padding: 0px;*/
+  width: 250px;
+  display: inline;
+  float: left;
+
+}
+.default_product_display form.product_form fieldset, #content .default_product_display form.product_form fieldset {
+  border: none;
+  padding: 0px;
+  float: left;
+  width: 250px; 
+}
+.single_product_display .wpsc_product_price {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  *zoom:1;
+  float: left;
+}
+.default_product_display .wpsc_product_price {
+  margin-bottom:10px;
+  font-size:16px;
+  display:inline-block;
+  *zoom:1;
+  padding: 20px;
+}
+.default_product_display .productcol {
+  vertical-align: middle;
+  min-height: 50px;
+  min-width:500px;
+  height: 380px;
+}
+.single_product_display .productcol {
+  vertical-align: middle;
+  min-height: 50px;
+  min-width:500px;
+  height: 380px;
+  margin-left: 168px
+}
+#default_products_page_container {
+  width: 720px; 
+  position:relative;
+  margin: 0px auto;
+}
+#single_product_page_container {
+  width:720px;  
+  position:relative;  
+}
+.default_product_display .wpsc_quantity_update {
+  height: 34px;
+  padding-top:4px;
+  margin-bottom:10px;
+  padding-bottom:2px;
+  margin-left:10px;
+}
+.single_product_display .wpsc_quantity_update {
+  padding-top:2px;
+}
+.wpcart_gallery {
+  width: 150px;
+}
+.navigation {
+  display:none;
+} 
+.entry-utility {
+  display:none;
+}
+/*-----FANCY NOTIFICATION STYLING-----*/
+#fancy_notification{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #dff0d8;
+  border: 4px solid #cccccc;
+  display: none;
+  height: auto;
+  z-index: 9;
+}
+/*----block meta----*/
+.custom_meta{
+  display:none;
+}
+/*----rearrange sold out sign----*/
+.single_product_display p.soldout {
+  float:left; /*added*/
+  font-weight:bold;
+  font-size:14px;
+  color:#C33; 
+  background:url(wpsc-images/outofstock.png) no-repeat scroll 0 5px transparent;
+  padding-left:18px;
+}
+/**facebook like**/
+.single_product_display .FB_like iframe {
+  border:none;
+  width:350px;
+  height:80px;
+  outline:none;
+  overflow:hidden;
+}
+.like-container {
+  position: relative;
+  width:500px;
+  height: 45px;
+  display: inline-block;
+
+}
+.twitter_like {
+  position: absolute;
+  margin-top: 20px;
+}
+.pinterest_pin {
+  position: absolute;
+  margin-left:77px;
+}
+.FB_like {
+  position: absolute;
+  top: 18px;
+  margin-left: 138px;
+}
+/**social icons**/
+
+.icons {
+  width: 500px;
+  margin: 30px auto 0 auto;
+  display:inline;
+}
+
+.icons a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 7px;
+  vertical-align: middle;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+}
+
+.icons a.twitter { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/twitter.png) left top no-repeat; }
+.icons a.dribbble { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/dribbble.png) left top no-repeat; }
+.icons a.rss { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/rss.png) left top no-repeat; }
+.icons a.pinterest { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/pinterest.png) left top no-repeat; }
+.icons a.digg { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/digg.png) left top no-repeat; }
+.icons a.flickr { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/flickr.png) left top no-repeat; }
+.icons a.forrst { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/forrst.png) left top no-repeat; }
+.icons a.vimeo { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/vimeo.png) left top no-repeat; }
+.icons a.reddit { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/reddit.png) left top no-repeat; }
+.icons a.linkedin { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/linkedin.png) left top no-repeat; }
+.icons a.facebook { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/facebook.png) left top no-repeat; }
+.icons a.paypal { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/paypal.png) left top no-repeat; }
+.icons a.stumbleupon { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/stumbleupon.png) left top no-repeat; }
+.icons a.email { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/email.png) left top no-repeat; }
+.icons a.deviantart { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/deviantart.png) left top no-repeat; }
+.icons a.netvibes { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/netvibes.png) left top no-repeat; }
+.icons a.yahoo { background: url(http://projectmonma.org/wp-content/themes/projectmonmaimg/social-icons/yahoo.png) left top no-repeat; }
+.icons a.github { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/github.png) left top no-repeat; }
+.icons a.addthis { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/addthis.png) left top no-repeat; }
+.icons a.behance { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/behance.png) left top no-repeat; }
+.icons a.blogger { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/blogger.png) left top no-repeat; }
+.icons a.slashdot { background: url(http://projectmonma.org/wp-content/themes/projectmonmaimg/social-icons/slashdot.png) left top no-repeat; }
+.icons a.technorati { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/technorati.png) left top no-repeat; }
+.icons a.googleplus { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/googleplus.png) left top no-repeat; }
+.icons a.apple { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/apple.png) left top no-repeat; }
+.icons a.myspace { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/myspace.png) left top no-repeat; }
+.icons a.sharethis { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/sharethis.png) left top no-repeat; }
+.icons a.yelp { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/yelp.png) left top no-repeat; }
+.icons a.delicious { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/delicious.png) left top no-repeat; }
+.icons a.lastfm { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/lastfm.png) left top no-repeat; }
+.icons a.youtube { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/youtube.png) left top no-repeat; }
+.icons a.skype { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/skype.png) left top no-repeat; }
+.icons a.tumblr { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/tumblr.png) left top no-repeat; }
+.icons a.aim { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/aim.png) left top no-repeat; }
+.icons a.google { background: url(http://projectmonma.org/wp-content/themes/projectmonma/img/social-icons/google.png) left top no-repeat; }
+
+.icons a:hover { background-position: left -34px; }
+
+
+.footer {
+  margin: 30px auto 0 auto;
+  font-size: 14px;
+}
+
+.footer a { color: #bebebe; text-decoration: none; }
+.footer a:hover { color: #bebebe; text-decoration: none; border-bottom: 1px dashed #cdcdcd; }
+
+
+/**social icons end**/
